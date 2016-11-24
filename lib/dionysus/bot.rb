@@ -1,5 +1,6 @@
-require "dionysus/version"
 require "olimpo"
+require "dionysus/bot/version"
+require "dionysus/bot/document_conversion"
 
 module Dionysus
   module Bot
