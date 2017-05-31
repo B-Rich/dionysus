@@ -15,9 +15,9 @@ module Dionysus
         @metadata = []
         @answer_units = []
         @warnings = []
-        build_metadata(attrs["metadata"])
-        build_answer_units(attrs["answer_units"])
-        build_warnings(attrs["warnings"])
+        build_metadata(attrs["metadata"]) if attrs["metadata"] != nil
+        build_answer_units(attrs["answer_units"]) if attrs["answer_units"] != nil
+        build_warnings(attrs["warnings"]) if attrs["warnings"] != nil
       end
 
       def build_metadata(metadata_arr)
